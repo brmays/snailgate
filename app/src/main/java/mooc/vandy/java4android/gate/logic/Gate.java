@@ -4,15 +4,12 @@ package mooc.vandy.java4android.gate.logic;
  * This file defines the Gate class.
  */
 public class Gate {
-    public final int IN;
-    public final int OUT;
-    public final int CLOSED;
+    public static final int IN = 1;
+    public static final int OUT = -1;
+    public static final int CLOSED = 0;
     private int mSwing;
 
     public Gate() {
-        IN = 1;
-        OUT = -1;
-        CLOSED = 0;
         mSwing = CLOSED;
     }
 
